@@ -39,9 +39,14 @@ User registration and login
 - Content-Type: application/json
 
 {
-    "username": "johndoe",
-    "email": "johndoe@example.com",
-    "password": "password123"
+    "firstname": "firstname",
+    "last":"last name"
+    "email": "@example.com",
+    "password": "password"
+    "phone": "01500000000"
+    "Company":"Name company or single"
+    "Plan":"plan"
+    
 }
 # Response
 
@@ -55,8 +60,8 @@ User registration and login
 -Content-Type: application/json
 
 {
-    "username": "yo",
-    "password": "password123"
+    "username": "username",
+    "password": "password"
 }
 # Response
 
