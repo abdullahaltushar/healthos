@@ -33,9 +33,9 @@ User registration and login
 3. Use an API client like Postman to send requests to the endpoints
 
 # Sample Requests and Responses
-# Register
+# Register user
 # Request
-- POST http://127.0.0.1:8000/register/
+- POST http://127.0.0.1:8000/registration/
 - Content-Type: application/json
 
 {
@@ -52,6 +52,25 @@ User registration and login
 
 {
     "message": "User registered successfully"
+}
+# Register Company
+# Request
+- POST http://127.0.0.1:8000/Company/
+- Content-Type: application/json
+
+{
+    "Name": "name",
+    "Address":"address"
+    "email": "@example.com",
+    "password": "password"
+    "phone number": "01500000000"
+    "web site:"https://www.abc.com"
+    
+}
+# Response
+
+{
+    "message": "Company registered successfully"
 }
 # Login
 # Request
