@@ -1,8 +1,8 @@
-#Project Name: healthos
-#Description
+# Project Name: healthos
+# Description
 Django app to track enterprise customers who pay a monthly subscription for a phone and data plan.
 
-#Features
+# Features
 User registration and login
 
 # login
@@ -14,7 +14,7 @@ User registration and login
 # Home 
 <img width="574" alt="Registation" src="last.PNG">
 
-#Installation
+# Installation
 Clone the repository: git clone https://github.com/awesomeAPI.git
 Install dependencies: pip install django, twilio
 Run migrations: python manage.py makemigrations & python manage.py migrate
@@ -27,7 +27,7 @@ DB_PASSWORD: Database password
 DB_HOST: Database host
 DB_PORT: Database port
 
-#Usage
+# Usage
 1. Start the development server: python manage.py runserver
 2. Open http://127.0.0.1:8000/ in your browser to access the API endpoints
 3. Use an API client like Postman to send requests to the endpoints
