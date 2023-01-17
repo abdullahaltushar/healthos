@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container ">
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="col-5 border m-5">
+        <h4 class="text-center"> *** Login Form ***</h4>
+        <form action="" method="POST" autocomplete="off">
+            {% csrf_token %}
+            {{ form | crispy}}
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button type="submit" class="btn btn-success mt-2">login</button>
+              </div>
+            <h6 class="text-success"> You have not Account? create account</h2>
+            <a href="{% url  'Company' %}" class="text-dark">As a Company</a> | 
+            <a href="{% url 'registration' %} " class="text-primary">As a User</a>
+            
+        </form>
+    </div>
+</div>
+</div>
+
+{% endblock content %}
